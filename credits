@@ -1,4 +1,25 @@
 Emily Flood - 
+
+/*Emily Flood
+ * February 22, 2020
+ * This code makes the servo motor spin continuously, which, in turn,
+ * makes the gear spin, which will cause the marker to move.
+ * This code was also in the Physical Computing week 5 lecture slides.
+ */
+
+#include <Servo.h> // Include library
+Servo myservo; // Makes a new servo object
+
+void setup() {
+  myservo.attach(9); // attaches the servo on pin 9 to the servo object
+}
+void loop() {
+  myservo.write(90); // Send servo to the 90 degree position
+  delay(1000);
+  myservo.write(0); // Send servo to 0 degree position
+  delay(1000);
+}
+
 Sam Kingston -
 Joshua Linton - 3174195
 .umg - Useless Machine Group
